@@ -20,7 +20,7 @@ from route import views
 
 
 urlpatterns = [
-    url(r'^$',views.process),
+    url(r'^',views.process),
     url(r'^admin/', admin.site.urls),
     url(r'^proxy/(?P<url>.*)',views.index,name='proxy')
 ]
