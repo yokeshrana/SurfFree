@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        cappy=cappy.cappy:cli
+    

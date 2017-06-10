@@ -1,0 +1,48 @@
+Metadata-Version: 2.0
+Name: django-admin
+Version: 1.0.2
+Summary: Django Admin Extensions
+Home-page: https://github.com/django-xxx/django-admin
+Author: Hackathon
+Author-email: kimi.huang@brightcells.com
+License: UNKNOWN
+Keywords: Django Admin Extensions
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Office/Business :: Financial :: Spreadsheet
+
+============
+django-admin
+============
+
+Django Admin Extensions
+
+Installation
+============
+
+::
+
+    pip install django-admin
+
+
+Usage
+=====
+
+::
+
+    from djadmin import DeleteModelAdmin
+    from django.contrib import admin
+
+    class XXXAdmin(admin.ModelAdmin, DeleteModelAdmin):
+
+        def delete_model(self, request, obj):
+            obj.delete()
+            # Other Codes
+
+
+
