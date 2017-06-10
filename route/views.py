@@ -15,8 +15,11 @@ def index(request,url):
     conn= urllib.urlopen(url)
     respose = conn.read()
     cleanSoup = sp(respose, "html.parser")
-    for a in cleanSoup.findAll('a'):
-        a['href'] ="/proxy/"+a['href']
+    try:
+        for a in cleanSoup.findAll('a'):
+         a['href'] ="/proxy/"+a['href']
+    except:
+        print "err"
     respose = str(cleanSoup)
     return HttpResponse(respose)
 
