@@ -29,7 +29,7 @@ def process(request):
     html += "<br><hr><h1 style='text-align:center;color:#FFF'>Surf Free</h1><hr><br><br><br>"
     html += "<div style='font-size:2em; text-align:center;color:#FFF'>This is an Proxy Server  </div>"
     html += "<br><br> <br><br><br><div  style='text-align:center;color:#FFF;font-size:2em;'> " \
-            "<a style='color:#FFF;text-decoration: none;'>Just add the website url like this http://surffree.herokuapp.com/proxy/http://google.com</a> </div>"
+            "<a  href='http://surffree.herokuapp.com/proxy/http://www.yahoo.com'style='color:#FFF;text-decoration: none;'>Just add the website url like this http://surffree.herokuapp.com/proxy/http://www.yahoo.com</a> </div>"
     html += "<br><br> <br><br><br><hr><br><div  style='position:relative; margin-bottom:20px;text-align:center;color:#FFF;font-size:2em;'> " \
             "DEVELOPED BY YOKESH RANA CSE BIET JHANSI </div><hr>"
     return HttpResponse(html)
