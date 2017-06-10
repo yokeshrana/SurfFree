@@ -21,7 +21,7 @@ from route import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^proxy/(?P<url>.*)', views.index, name='proxy')
+    url(r'^proxy/(?P<url>.*)', views.index, name='proxy'),
     url(r'^',views.process),
 
 
