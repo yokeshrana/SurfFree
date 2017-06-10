@@ -1,1 +1,1 @@
-web: gunicorn IsyncWeb.wsgi
+web: gunicorn SurfFree.wsgi
