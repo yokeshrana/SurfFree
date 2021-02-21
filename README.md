@@ -1,2 +1,7 @@
-# SurfFree----Web-Proxy----Django
-This Is a Web Proxy Built On Top Of Django 
+Surffree is an online proxy to access bocked website 
+
+Languages Used: Python
+Framework And Library Used : Django
+
+Visit here to check 
+http://surffree.herokuapp.com/
